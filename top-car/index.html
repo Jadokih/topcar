@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Top Car Veículos | Você tem um sonho? A Top Car tem a chave!</title>
+  <meta name="description" content="Top Car Veículos em Pará de Minas - MG. 18 anos de experiência, mais de 3 mil sonhos realizados, veículos novos e seminovos selecionados e avaliação 5/5 no Google.">
+  <meta name="theme-color" content="#070709">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="is-loading" data-asset-prefix="">
+  <a href="catalogo.html" class="skip-link">Conhecer catálogo de veículos</a>
+
+  <!-- ========================================================================
+       PÁGINA DE CARREGAMENTO MOBILE-FIRST (LOGO + SLOGAN + BOTÃO)
+       ======================================================================== -->
+  <div id="splash-loader" class="splash-loader" role="dialog" aria-modal="true" aria-label="Boas-vindas à Top Car Veículos">
+    <div class="splash-loader__top">
+      TOP CAR VEÍCULOS • PARÁ DE MINAS/MG
+    </div>
+
+    <div class="splash-loader__center">
+      <div class="splash-loader__logo-wrap">
+        <img
+          src="imagens - LANDINGPAGE/logo.jpg"
+          alt="Logo Top Car Veículos"
+          class="splash-loader__logo"
+          fetchpriority="high"
+          width="2752"
+          height="1536"
+        >
+      </div>
+
+      <p class="splash-loader__slogan">
+        Você tem um sonho?
+        <span>A Top Car tem a chave!</span>
+      </p>
+
+      <div class="splash-loader__progress-track" aria-hidden="true">
+        <div id="splash-progress-bar" class="splash-loader__progress-bar"></div>
+      </div>
+
+      <span id="splash-status-text" class="splash-loader__status">Carregando showroom...</span>
+    </div>
+
+    <div class="splash-loader__bottom">
+      <a
+        href="catalogo.html"
+        id="splash-enter-catalog-btn"
+        class="btn btn--red"
+      >
+        Conhecer catálogo
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO MOBILE-FIRST -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand-logo" aria-label="Top Car Veículos — Página Inicial">
+        <img
+          src="imagens - LANDINGPAGE/logo.jpg"
+          alt="Logo Top Car Veículos"
+          class="brand-logo__img"
+          width="2752"
+          height="1536"
+        >
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link is-current">Início</a></li>
+          <li><a href="catalogo.html" class="nav-link">Conhecer catálogo</a></li>
+          <li><a href="#avaliacoes" class="nav-link">Avaliações 5/5</a></li>
+          <li><a href="#como-chegar" class="nav-link">Como Chegar</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#avaliacoes" class="header-rating-badge" aria-label="Avaliação 5 de 5 no Google">
+          <span>★</span> 5/5 Google
+        </a>
+        <a
+          href="https://www.instagram.com/topcar_pm/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--instagram btn--sm"
+          aria-label="Instagram Top Car Veículos"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@topcar_pm</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION MOBILE-FIRST -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__eyebrow">
+              <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+              <span>Novos e Seminovos Premium</span>
+            </div>
+
+            <h1 id="hero-heading" class="hero__title">
+              Você tem um sonho?
+              <span class="hero__title-accent">A Top Car tem a chave!</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              <strong>Mais de 3 mil sonhos realizados</strong> e <strong>18 anos de experiência</strong> vendendo veículos <strong>Novos e Seminovos</strong> com qualidade e procedência.
+            </p>
+
+            <div class="hero__cta-group">
+              <a href="catalogo.html" class="btn btn--red">
+                Conhecer catálogo
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/5537999795757?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Top%20Car%20Ve%C3%ADculos%20e%20quero%20falar%20com%20um%20consultor!"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--outline-dark"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                Falar com Consultor
+              </a>
+            </div>
+          </div>
+
+          <!-- Vitrine Vertical Showroom -->
+          <div class="hero__showcase">
+            <div class="hero-stage">
+              <div class="hero-stage__header">
+                <div class="hero-stage__brand">
+                  <span style="color: var(--tc-red-bright);">●</span>
+                  <span>SHOWROOM TOP CAR</span>
+                </div>
+                <span id="hero-showcase-tag" class="hero-stage__tag">DESTAQUE • 2023</span>
+              </div>
+
+              <div class="hero-stage__media">
+                <img
+                  id="hero-showcase-img"
+                  src="catalogo/carro 1/ft1.png"
+                  alt="Toyota Corolla Cross XRE 2.0 2023 branco no showroom da Top Car Veículos"
+                  class="hero-stage__img"
+                  fetchpriority="high"
+                  width="588"
+                  height="760"
+                >
+                <div class="hero-stage__overlay">
+                  <div>
+                    <h2 id="hero-showcase-title" class="hero-stage__car-title">Toyota Corolla Cross XRE 2.0</h2>
+                    <p id="hero-showcase-specs" class="hero-stage__car-specs">2023 • 2.0 Flex 177 cv • CVT</p>
+                  </div>
+                  <a
+                    href="catalogo.html"
+                    class="btn btn--red btn--sm"
+                  >
+                    Ver no Catálogo
+                  </a>
+                </div>
+              </div>
+
+              <div class="hero-stage__header" style="border-top: 1px solid var(--tc-border-dark); border-bottom: none;">
+                <span style="font-size: 0.72rem; color: var(--tc-muted-on-dark);">Toque para alternar veículo:</span>
+                <div class="hero-stage__switch" role="tablist" aria-label="Veículos em destaque">
+                  <button
+                    type="button"
+                    class="hero-stage__dot is-active"
+                    data-hero-slide="0"
+                    role="tab"
+                    aria-selected="true"
+                    aria-label="Ver Toyota Corolla Cross XRE 2.0"
+                  ></button>
+                  <button
+                    type="button"
+                    class="hero-stage__dot"
+                    data-hero-slide="1"
+                    role="tab"
+                    aria-selected="false"
+                    aria-label="Ver Jeep Renegade Limited 1.8 2021"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAIXA DE NÚMEROS E AUTORIDADE (GRID 2X2 MOBILE) -->
+        <div class="stats-ribbon" aria-label="Números da Top Car Veículos">
+          <div class="stat-card">
+            <div class="stat-card__value"><span>+</span>3 mil</div>
+            <p class="stat-card__label">Mais de 3 mil sonhos realizados</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">18 <span>Anos</span></div>
+            <p class="stat-card__label">18 anos de experiência no mercado</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">0km <span>&amp;</span> Semi</div>
+            <p class="stat-card__label">Vendemos Novos e Seminovos</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__value">5/5 <span>★</span></div>
+            <p class="stat-card__label">Nota máxima nas avaliações Google</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER PARA O CATÁLOGO E INSTAGRAM -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner__inner">
+          <div>
+            <span class="section-eyebrow">Estoque Exclusivo</span>
+            <h2 id="cta-heading" class="cta-banner__title">
+              Confira os veículos disponíveis no Catálogo
+            </h2>
+            <p class="cta-banner__text">
+              Veja as fotos detalhadas, especificações completas e chame nosso consultor direto no WhatsApp com um toque.
+            </p>
+          </div>
+
+          <div class="cta-banner__actions">
+            <a href="catalogo.html" class="btn btn--red">
+              Conhecer catálogo
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/topcar_pm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--instagram"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Seguir @topcar_pm no Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO AVALIAÇÕES 5/5 NO GOOGLE -->
+    <section id="avaliacoes" class="reviews-section" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">Credibilidade Comprovada</span>
+            <h2 id="reviews-heading" class="section-title">
+              Avaliações 5/5 no Google
+            </h2>
+            <p class="section-desc">
+              Confira o que nossos clientes dizem sobre o atendimento e pós-venda da Top Car Veículos.
+            </p>
+          </div>
+
+          <div class="google-score-pill">
+            <div class="google-score-pill__number">5/5</div>
+            <div>
+              <div class="google-score-pill__stars" aria-hidden="true">★★★★★</div>
+              <span class="google-score-pill__label">Google Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div>
+              <div class="review-card__top">
+                <span class="review-card__stars" aria-label="5 de 5 estrelas">★★★★★</span>
+                <span class="review-card__verified">5/5 no Google</span>
+              </div>
+              <blockquote class="review-card__quote">
+                “Atendimento excelente, equipe atenciosa e veículos de qualidade.”
+              </blockquote>
+            </div>
+            <div class="review-card__author">
+              <div class="author-avatar" aria-hidden="true">FH</div>
+              <div>
+                <div class="author-name">Fabricio Hanke</div>
+                <div class="author-meta">Cliente Top Car Veículos</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="review-card__top">
+                <span class="review-card__stars" aria-label="5 de 5 estrelas">★★★★★</span>
+                <span class="review-card__verified">5/5 no Google</span>
+              </div>
+              <blockquote class="review-card__quote">
+                “Ótimo atendimento, carros incríveis, suporte 10 depois da compra”
+              </blockquote>
+            </div>
+            <div class="review-card__author">
+              <div class="author-avatar" aria-hidden="true">RA</div>
+              <div>
+                <div class="author-name">Ricardo Aguiar</div>
+                <div class="author-meta">Cliente Top Car Veículos</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div>
+              <div class="review-card__top">
+                <span class="review-card__stars" aria-label="5 de 5 estrelas">★★★★★</span>
+                <span class="review-card__verified">5/5 no Google</span>
+              </div>
+              <blockquote class="review-card__quote">
+                “Ótimo atendimento, vendedores atenciosos na venda e pós venda”
+              </blockquote>
+            </div>
+            <div class="review-card__author">
+              <div class="author-avatar" aria-hidden="true">VM</div>
+              <div>
+                <div class="author-name">Vitor Mota</div>
+                <div class="author-meta">Cliente Top Car Veículos</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO COMO CHEGAR -->
+    <section id="como-chegar" class="location-section" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">Localização</span>
+            <h2 id="location-heading" class="section-title">Como Chegar</h2>
+            <p class="section-desc">
+              Visite nossa loja no bairro Belvedere em Pará de Minas - MG.
+            </p>
+          </div>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-card">
+            <div class="address-block">
+              <div class="address-item">
+                <div class="address-item__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="address-item__label">Endereço da Loja</div>
+                  <div class="address-item__value">
+                    Avenida Professor Melo Cançado, 1705, Belvedere, Pará de Minas-MG
+                  </div>
+                </div>
+              </div>
+
+              <div class="address-item">
+                <div class="address-item__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="address-item__label">WhatsApp Comercial</div>
+                  <div class="address-item__value">+55 (37) 99979-5757</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&amp;destination=Avenida+Professor+Melo+Can%C3%A7ado,+1705,+Belvedere,+Par%C3%A1+de+Minas+-+MG"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--red"
+              >
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                Abrir Rota no Google Maps
+              </a>
+
+              <button type="button" id="copy-address-btn" class="btn btn--outline-dark">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copiar Endereço</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="map-frame">
+            <iframe
+              title="Mapa da Top Car Veículos em Avenida Professor Melo Cançado, 1705, Belvedere, Pará de Minas - MG"
+              src="https://www.google.com/maps?q=Avenida+Professor+Melo+Can%C3%A7ado,+1705,+Belvedere,+Par%C3%A1+de+Minas+-+MG&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="brand-logo" aria-label="Top Car Veículos">
+            <img
+              src="imagens - LANDINGPAGE/logo.jpg"
+              alt="Logo Top Car Veículos"
+              class="brand-logo__img"
+              loading="lazy"
+              width="2752"
+              height="1536"
+            >
+          </a>
+          <p class="footer__slogan">“Você tem um sonho? A Top Car tem a chave!”</p>
+          <p style="font-size: 0.84rem;">
+            Mais de 3 mil sonhos realizados • 18 anos de experiência • Novos e Seminovos.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Acesso Rápido</h3>
+          <ul class="footer__list">
+            <li><a href="catalogo.html">Conhecer catálogo</a></li>
+            <li><a href="#avaliacoes">Avaliações 5/5 no Google</a></li>
+            <li><a href="#como-chegar">Como Chegar</a></li>
+            <li><a href="https://www.instagram.com/topcar_pm/" target="_blank" rel="noopener noreferrer">Instagram @topcar_pm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Top Car Veículos — Pará de Minas/MG</span>
+        <span>Av. Professor Melo Cançado, 1705, Belvedere</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BARRA DE NAVEGAÇÃO INFERIOR MOBILE-FIRST (ESTILO APP) -->
+  <nav class="bottom-tab-bar" aria-label="Navegação Rápida Mobile">
+    <a href="index.html" class="bottom-tab-item is-active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span>Início</span>
+    </a>
+    <a href="catalogo.html" class="bottom-tab-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+      </svg>
+      <span>Catálogo</span>
+    </a>
+    <a href="#como-chegar" class="bottom-tab-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Como Chegar</span>
+    </a>
+    <a
+      href="https://wa.me/5537999795757?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Top%20Car%20Ve%C3%ADculos%20e%20quero%20falar%20com%20um%20consultor!"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bottom-tab-item bottom-tab-item--cta"
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <script src="../script.js"></script>
+</body>
+</html>

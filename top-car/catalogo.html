@@ -1,0 +1,602 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Catálogo Premium | Top Car Veículos — Novos e Seminovos</title>
+  <meta name="description" content="Confira o catálogo de veículos novos e seminovos selecionados da Top Car Veículos em Pará de Minas - MG. Fale direto com nosso consultor no WhatsApp.">
+  <meta name="theme-color" content="#070709">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-asset-prefix="">
+  <a href="#catalogo-lista" class="skip-link">Pular para os veículos do catálogo</a>
+
+  <!-- CABEÇALHO MOBILE-FIRST -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand-logo" aria-label="Voltar para a Página Inicial da Top Car Veículos">
+        <img
+          src="imagens - LANDINGPAGE/logo.jpg"
+          alt="Logo Top Car Veículos"
+          class="brand-logo__img"
+          width="2752"
+          height="1536"
+        >
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="catalogo.html" class="nav-link is-current" aria-current="page">Catálogo de Veículos</a></li>
+          <li><a href="index.html#avaliacoes" class="nav-link">Avaliações 5/5</a></li>
+          <li><a href="index.html#como-chegar" class="nav-link">Como Chegar</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a
+          href="index.html"
+          class="btn btn--outline-dark btn--sm"
+          aria-label="Voltar para o início"
+        >
+          ← Início
+        </a>
+        <a
+          href="https://www.instagram.com/topcar_pm/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--instagram btn--sm"
+          aria-label="Instagram Top Car Veículos"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@topcar_pm</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABERTURA DA SEGUNDA PÁGINA (CATÁLOGO MOBILE-FIRST) -->
+    <section class="catalog-page-hero" aria-labelledby="catalog-page-heading">
+      <div class="container catalog-page-hero__inner">
+        <div>
+          <div class="hero__eyebrow" style="margin-bottom: 0.5rem;">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            <span>Showroom Oficial • Novos e Seminovos</span>
+          </div>
+          <h1 id="catalog-page-heading" class="catalog-page-hero__title">
+            Catálogo <span style="color: var(--tc-red-bright);">Top Car Veículos</span>
+          </h1>
+          <p class="catalog-page-hero__subtitle">
+            Você tem um sonho? A Top Car tem a chave! Escolha o veículo abaixo e toque em <strong>Falar com Consultor</strong> para atendimento direto no WhatsApp.
+          </p>
+        </div>
+
+        <div class="catalog-page-hero__stats">
+          <div class="mini-stat">
+            <strong>+3 mil</strong>
+            <span>Sonhos realizados</span>
+          </div>
+          <div class="mini-stat">
+            <strong>18 Anos</strong>
+            <span>Experiência</span>
+          </div>
+          <div class="mini-stat">
+            <strong>5/5 ★</strong>
+            <span>Google</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE VEÍCULOS DO CATÁLOGO -->
+    <section id="catalogo-lista" class="catalog-section" aria-label="Veículos disponíveis">
+      <div class="container">
+        <!-- Barra de Busca e Filtros Deslizáveis -->
+        <div class="catalog-toolbar" role="search" aria-label="Filtrar veículos do catálogo">
+          <div class="catalog-search">
+            <svg class="catalog-search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="search"
+              id="catalog-search-input"
+              class="catalog-search__input"
+              placeholder="Buscar modelo, motor, couro, teto solar..."
+              aria-label="Buscar veículo por nome ou equipamento"
+            >
+          </div>
+
+          <div class="filter-pills" role="group" aria-label="Categorias de filtro">
+            <button type="button" class="filter-pill is-active" data-filter="all">Todos (2)</button>
+            <button type="button" class="filter-pill" data-filter="2023">Ano 2023</button>
+            <button type="button" class="filter-pill" data-filter="2021">Ano 2021</button>
+            <button type="button" class="filter-pill" data-filter="teto solar">Teto Solar</button>
+            <button type="button" class="filter-pill" data-filter="177 cv">177 cv • CVT</button>
+          </div>
+        </div>
+
+        <!-- CARDS DE VEÍCULOS (MOBILE-FIRST) -->
+        <div class="catalog-grid">
+
+          <!-- ============================================================
+               CARRO 1: TOYOTA COROLLA CROSS XRE 2.0 (2023)
+               ============================================================ -->
+          <article
+            class="vehicle-card"
+            data-tags="toyota corolla cross xre 2.0 2023 suv automatico cvt 177 cv couro led carplay android auto"
+          >
+            <div class="vehicle-card__stage">
+              <div
+                class="vehicle-card__backdrop"
+                style="background-image: url('catalogo/carro 1/ft1.png');"
+                aria-hidden="true"
+              ></div>
+
+              <div class="vehicle-card__top-badges">
+                <span class="badge-year">2023 • FLEX</span>
+                <span class="badge-highlight">177 CV • CVT SEQUENCIAL</span>
+              </div>
+
+              <img
+                src="catalogo/carro 1/ft1.png"
+                alt="Toyota Corolla Cross XRE 2.0 2023 branco no showroom Top Car Veículos"
+                class="vehicle-card__img"
+                fetchpriority="high"
+                width="588"
+                height="760"
+              >
+
+              <div class="vehicle-card__gallery-bar">
+                <div class="photo-thumbs" role="group" aria-label="Fotos do Toyota Corolla Cross XRE 2.0">
+                  <button
+                    type="button"
+                    class="photo-thumb-btn is-active"
+                    data-card-photo-btn
+                    data-img-src="catalogo/carro 1/ft1.png"
+                    data-img-alt="Toyota Corolla Cross XRE 2.0 2023 visto de frente no showroom Top Car"
+                    data-img-contain="false"
+                    aria-pressed="true"
+                  >
+                    Foto 1
+                  </button>
+                  <button
+                    type="button"
+                    class="photo-thumb-btn"
+                    data-card-photo-btn
+                    data-img-src="catalogo/carro 1/ft2.png"
+                    data-img-alt="Toyota Corolla Cross XRE 2.0 2023 visto de perfil lateral"
+                    data-img-contain="true"
+                    aria-pressed="false"
+                  >
+                    Foto 2
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  class="expand-gallery-btn"
+                  data-open-modal="corolla-cross"
+                >
+                  +16 itens / Ampliar
+                </button>
+              </div>
+            </div>
+
+            <div class="vehicle-card__body">
+              <span class="vehicle-card__category">SUV Premium • Qualidade Toyota</span>
+              <h2 class="vehicle-card__title">Toyota Corolla Cross XRE 2.0</h2>
+              <p class="vehicle-card__tagline">
+                Conforto, tecnologia e confiabilidade na TopCar! Ideal para cidade, estrada e viagens em família — um dos SUVs mais procurados e valorizados do mercado.
+              </p>
+
+              <div class="specs-strip" aria-label="Especificações principais">
+                <div class="spec-box">
+                  <span class="spec-box__label">Ano</span>
+                  <span class="spec-box__val">2023</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-box__label">Motor</span>
+                  <span class="spec-box__val">2.0 177cv</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-box__label">Câmbio</span>
+                  <span class="spec-box__val">CVT Seq.</span>
+                </div>
+              </div>
+
+              <div class="features-preview">
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Bancos em couro
+                </span>
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Android Auto &amp; CarPlay
+                </span>
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Chave Presencial
+                </span>
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Faróis em LED
+                </span>
+                <button
+                  type="button"
+                  class="feature-chip feature-chip--more"
+                  data-open-modal="corolla-cross"
+                >
+                  + Ver ficha completa
+                </button>
+              </div>
+
+              <div class="vehicle-card__footer">
+                <div class="vehicle-card__price-row">
+                  <div>
+                    <span class="price-status__label">Condição Top Car</span>
+                    <span class="price-status__val">Consulte Condições</span>
+                  </div>
+                  <span class="availability-pill">Disponível</span>
+                </div>
+
+                <div class="vehicle-card__actions">
+                  <a
+                    href="https://wa.me/5537999795757?text=Ol%C3%A1%2C%20me%20interessei%20pelo%20modelo%20Toyota%20Corolla%20Cross%20XRE%202.0..."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn--whatsapp btn-consultant"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Falar com Consultor
+                  </a>
+
+                  <button
+                    type="button"
+                    class="btn btn--outline-light"
+                    data-open-modal="corolla-cross"
+                  >
+                    Ver Ficha Técnica Completa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================================================
+               CARRO 2: JEEP RENEGADE LIMITED 1.8 FLEX AUTOMÁTICO 2021
+               ============================================================ -->
+          <article
+            class="vehicle-card"
+            data-tags="jeep renegade limited 1.8 flex automatico 2021 suv teto solar panoramico 50.000 km couro dual zone"
+          >
+            <div class="vehicle-card__stage">
+              <div
+                class="vehicle-card__backdrop"
+                style="background-image: url('catalogo/carro 2/dr.png');"
+                aria-hidden="true"
+              ></div>
+
+              <div class="vehicle-card__top-badges">
+                <span class="badge-year">2021 • 50.000 KM</span>
+                <span class="badge-highlight">TETO SOLAR PANORÂMICO</span>
+              </div>
+
+              <img
+                src="catalogo/carro 2/dr.png"
+                alt="Jeep Renegade Limited 1.8 Flex Automático 2021 branco no showroom Top Car Veículos"
+                class="vehicle-card__img"
+                width="804"
+                height="782"
+              >
+
+              <div class="vehicle-card__gallery-bar">
+                <div class="photo-thumbs" role="group" aria-label="Fotos do Jeep Renegade Limited 1.8 2021">
+                  <button
+                    type="button"
+                    class="photo-thumb-btn is-active"
+                    data-card-photo-btn
+                    data-img-src="catalogo/carro 2/dr.png"
+                    data-img-alt="Jeep Renegade Limited 1.8 Flex Automático 2021 visto de frente com faróis em LED"
+                    data-img-contain="false"
+                    aria-pressed="true"
+                  >
+                    Foto 1
+                  </button>
+                  <button
+                    type="button"
+                    class="photo-thumb-btn"
+                    data-card-photo-btn
+                    data-img-src="catalogo/carro 2/ft2.png"
+                    data-img-alt="Jeep Renegade Limited 1.8 Flex Automático 2021 visto em ângulo lateral com rodas pretas"
+                    data-img-contain="false"
+                    aria-pressed="false"
+                  >
+                    Foto 2
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  class="expand-gallery-btn"
+                  data-open-modal="renegade-limited"
+                >
+                  +15 itens / Ampliar
+                </button>
+              </div>
+            </div>
+
+            <div class="vehicle-card__body">
+              <span class="vehicle-card__category">SUV Versão Topo • Personalidade Jeep</span>
+              <h2 class="vehicle-card__title">Jeep Renegade Limited 1.8 Flex Automático 2021</h2>
+              <p class="vehicle-card__tagline">
+                Sofisticação, conforto e personalidade na TopCar! SUV com presença, teto solar panorâmico e estilo para quem quer dirigir com personalidade.
+              </p>
+
+              <div class="specs-strip" aria-label="Especificações principais">
+                <div class="spec-box">
+                  <span class="spec-box__label">Ano / KM</span>
+                  <span class="spec-box__val">2021 • 50k</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-box__label">Motor</span>
+                  <span class="spec-box__val">1.8 Flex</span>
+                </div>
+                <div class="spec-box">
+                  <span class="spec-box__label">Câmbio</span>
+                  <span class="spec-box__val">Aut. 6M</span>
+                </div>
+              </div>
+
+              <div class="features-preview">
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Teto Solar Panorâmico
+                </span>
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Versão Limited
+                </span>
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Ar Digital Dual Zone
+                </span>
+                <span class="feature-chip">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Bancos em Couro
+                </span>
+                <button
+                  type="button"
+                  class="feature-chip feature-chip--more"
+                  data-open-modal="renegade-limited"
+                >
+                  + Ver ficha completa
+                </button>
+              </div>
+
+              <div class="vehicle-card__footer">
+                <div class="vehicle-card__price-row">
+                  <div>
+                    <span class="price-status__label">Condição Top Car</span>
+                    <span class="price-status__val">Consulte Condições</span>
+                  </div>
+                  <span class="availability-pill">Disponível</span>
+                </div>
+
+                <div class="vehicle-card__actions">
+                  <a
+                    href="https://wa.me/5537999795757?text=Ol%C3%A1%2C%20me%20interessei%20pelo%20modelo%20Jeep%20Renegade%20Limited%201.8%20Flex%20Autom%C3%A1tico%202021..."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn--whatsapp btn-consultant"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Falar com Consultor
+                  </a>
+
+                  <button
+                    type="button"
+                    class="btn btn--outline-light"
+                    data-open-modal="renegade-limited"
+                  >
+                    Ver Ficha Técnica Completa
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Estado Vazio da Busca -->
+        <div id="catalog-empty-state" class="catalog-empty" role="status">
+          <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 0.4rem;">
+            Nenhum veículo encontrado
+          </h3>
+          <p style="color: var(--tc-muted-on-light); margin-bottom: 1rem; font-size: 0.9rem;">
+            Trabalhamos com encomendas de Novos e Seminovos! Limpe o filtro ou chame nosso consultor.
+          </p>
+          <button type="button" id="reset-catalog-filters" class="btn btn--red">
+            Mostrar Todos os Veículos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER DE CONVERSÃO -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner__inner">
+          <div>
+            <span class="section-eyebrow">Novos e Seminovos</span>
+            <h2 id="cta-heading" class="cta-banner__title">
+              Você tem um sonho? A Top Car tem a chave!
+            </h2>
+            <p class="cta-banner__text">
+              Avaliamos seu usado na troca e financiamos com as melhores taxas. Fale agora com nosso consultor.
+            </p>
+          </div>
+
+          <div class="cta-banner__actions">
+            <a
+              href="https://wa.me/5537999795757?text=Ol%C3%A1%2C%20estou%20no%20cat%C3%A1logo%20da%20Top%20Car%20Ve%C3%ADculos%20e%20quero%20falar%20com%20um%20consultor!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--red"
+            >
+              Chamar Consultor no WhatsApp
+            </a>
+            <a
+              href="https://www.instagram.com/topcar_pm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--instagram"
+            >
+              Seguir @topcar_pm no Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE FICHA TÉCNICA COMPLETA & GALERIA (<dialog>) -->
+  <dialog id="vehicle-detail-modal" class="vehicle-modal" aria-labelledby="modal-vehicle-title">
+    <div class="vehicle-modal__inner">
+      <div class="vehicle-modal__header">
+        <div>
+          <span id="modal-vehicle-category" style="font-family: var(--font-mono); font-size: 0.68rem; color: #FF8A90; text-transform: uppercase; letter-spacing: 0.08em; display: block;"></span>
+          <h3 id="modal-vehicle-title" class="vehicle-modal__title">Detalhes do Veículo</h3>
+        </div>
+        <button type="button" id="modal-close-btn" class="vehicle-modal__close" aria-label="Fechar ficha técnica">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="vehicle-modal__content">
+        <div class="modal-gallery">
+          <div class="modal-gallery__main">
+            <img id="modal-main-img" src="catalogo/carro 1/ft1.png" alt="Foto ampliada do veículo">
+          </div>
+          <div id="modal-thumbs-container" class="modal-gallery__thumbs"></div>
+        </div>
+
+        <div class="modal-details">
+          <p id="modal-vehicle-desc" style="color: var(--tc-muted-on-light); font-size: 0.9rem;"></p>
+
+          <h4 style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 800; margin-top: 0.9rem;">
+            Ficha Completa &amp; Opcionais:
+          </h4>
+
+          <ul id="modal-specs-list" class="modal-specs-list"></ul>
+
+          <a
+            id="modal-wa-btn"
+            href="https://wa.me/5537999795757"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--red"
+          >
+            Falar com Consultor no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="brand-logo" aria-label="Top Car Veículos">
+            <img
+              src="imagens - LANDINGPAGE/logo.jpg"
+              alt="Logo Top Car Veículos"
+              class="brand-logo__img"
+              loading="lazy"
+              width="2752"
+              height="1536"
+            >
+          </a>
+          <p class="footer__slogan">“Você tem um sonho? A Top Car tem a chave!”</p>
+          <p style="font-size: 0.84rem;">
+            Mais de 3 mil sonhos realizados • 18 anos de experiência • Novos e Seminovos.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__heading">Acesso Rápido</h3>
+          <ul class="footer__list">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="index.html#avaliacoes">Avaliações 5/5 no Google</a></li>
+            <li><a href="index.html#como-chegar">Como Chegar</a></li>
+            <li><a href="https://www.instagram.com/topcar_pm/" target="_blank" rel="noopener noreferrer">Instagram @topcar_pm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Top Car Veículos — Pará de Minas/MG</span>
+        <span>Av. Professor Melo Cançado, 1705, Belvedere</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BARRA DE NAVEGAÇÃO INFERIOR MOBILE-FIRST (ESTILO APP) -->
+  <nav class="bottom-tab-bar" aria-label="Navegação Rápida Mobile">
+    <a href="index.html" class="bottom-tab-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span>Início</span>
+    </a>
+    <a href="catalogo.html" class="bottom-tab-item is-active" aria-current="page">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+        <rect x="14" y="14" width="7" height="7" rx="1"></rect>
+        <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+      </svg>
+      <span>Catálogo</span>
+    </a>
+    <a href="index.html#como-chegar" class="bottom-tab-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+      <span>Como Chegar</span>
+    </a>
+    <a
+      href="https://wa.me/5537999795757?text=Ol%C3%A1%2C%20estou%20no%20cat%C3%A1logo%20da%20Top%20Car%20Ve%C3%ADculos%20e%20quero%20falar%20com%20um%20consultor!"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bottom-tab-item bottom-tab-item--cta"
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <script src="../script.js"></script>
+</body>
+</html>
